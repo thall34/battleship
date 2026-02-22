@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#play-area {
+    display: flex;
+    gap: 50px;
+}
+
+#player1, #player2 {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: fit-content;
+    gap: 1px;
+    border: 1px solid black;
+}
+
+.grid-row {
+    display: flex;
+    gap: 1px;
+}
+
+.grid-cell-p1, .grid-cell-p2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+}
+
+.water {
+    background-color: rgb(54, 54, 252);
+}
+
+.miss {
+    background-color: rgb(238, 251, 253);
+}
+
+.hit {
+    background-color: rgb(197, 25, 25);
+}
+
+.ship {
+    background-color: rgb(179, 179, 179);
+}
