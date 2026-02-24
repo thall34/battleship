@@ -1,12 +1,47 @@
+@font-face {
+    font-family: 'gunplay';
+    src: url('./fonts/gunplay_rg-webfont.woff2') format('woff2'),
+         url('./fonts/gunplay_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     margin: 0;
     padding: 0;
     border: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/blue-wall-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: rgb(190, 190, 190);
+    font-family: "gunplay";
+}
+
+h2 {
+    font-size: 30px;
+}
+
+#header, #winner {
+    text-align: center;
+    font-size: 100px;
+    padding: 50px;
+    padding-bottom: 25px;
+}
+
+#player-names {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 125px;
+    padding: 25px;
 }
 
 #play-area {
     display: flex;
-    gap: 50px;
+    justify-content: space-evenly;
 }
 
 #player1, #player2 {
@@ -23,7 +58,7 @@ body {
     gap: 1px;
 }
 
-.grid-cell-p1, .grid-cell-p2 {
+.grid-cell {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +68,7 @@ body {
 }
 
 .water {
-    background-color: rgb(54, 54, 252);
+    background-color: rgb(47, 133, 238);
 }
 
 .miss {
@@ -41,7 +76,7 @@ body {
 }
 
 .hit {
-    background-color: rgb(197, 25, 25);
+    background-color: rgb(246, 27, 27);
 }
 
 .ship {

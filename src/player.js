@@ -2,7 +2,7 @@ import { Gameboard } from "./gameboard.js"
 
 class Player {
     constructor() {
-        this.board = new Gameboard(10)
+        this.board = new Gameboard(10);
     }
 }
 
