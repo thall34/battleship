@@ -82,3 +82,17 @@ h2 {
 .ship {
     background-color: rgb(179, 179, 179);
 }
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+button {
+    font-family: inherit;
+    background-color: white;
+    font-size: 30px;
+    border: 5px solid rgb(47, 133, 238);
+    border-radius: 10px;
+}

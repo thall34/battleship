@@ -94,6 +94,19 @@ class UserInterface {
             container.appendChild(gridRow);
         })
     }
+
+    gameStart(p1container, p2container) {
+        this.player1.generateShips()
+        this.player2.generateShips()
+        this.drawP1Board(p1container)
+        this.drawP2Board(p2container)
+    }
+
+    restartGame(p1container, p2container) {
+        this.player1 = new Player();
+        this.player2 = new Player();
+        this.gameStart(p1container, p2container)
+    }
 }
 
 export { UserInterface }
